@@ -1,5 +1,5 @@
 .c-header {
-  background-color: #2a3f73;
+  background-color: #C8D3D9;
   padding: 1rem 2rem;
 }
 
@@ -13,16 +13,19 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
+  background-color: #112E40;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
 }
 
-.c-header__nav .c-header__list {
+.c-header__list {
   display: flex;
   gap: 1.5rem;
   list-style: none;
 }
 
 .c-header__item a {
-  color: #fff;
+  color:#025949;
   text-decoration: none;
   font-weight: 500;
 }

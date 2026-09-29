@@ -1,8 +1,9 @@
 .c-hero {
-  background-color: #1a2a4f;
+  background-color: #112E40;
   color: #fff;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 6rem;
   text-align: center;
+  position: relative;
 }
 
 .c-hero__title {
@@ -33,7 +34,11 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 3rem;
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
 }
 
 .c-hero__card {
@@ -45,3 +50,4 @@
   justify-content: center;
   border-radius: 6px;
 }
+

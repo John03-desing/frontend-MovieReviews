@@ -1,10 +1,9 @@
 .c-feature-card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background: var(--color-mint);
-  color: var(--color-navy);
+  flex: 1;
+  max-width: 200px;
+  background: #6CD9BA;
   border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .c-feature-card__image {
