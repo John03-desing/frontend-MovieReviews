@@ -1,0 +1,26 @@
+.c-feature-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-mint);
+  color: var(--color-navy);
+  border-radius: 0.75rem;
+}
+
+.c-feature-card__image {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.c-feature-card__body {
+  padding: var(--space-s) var(--space-m);
+}
+
+.c-feature-card__title {
+  font-size: 1.125rem;
+}
+
+.c-feature-card__date {
+  font-size: var(--font-size-s);
+}

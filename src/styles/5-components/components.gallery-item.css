@@ -1,0 +1,31 @@
+.c-gallery-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--color-mint);
+  border-radius: 0.5rem;
+}
+
+.c-gallery-item__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-gallery-item__caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: var(--space-s);
+  background: rgb(18 40 63 / 0.8);
+  color: var(--color-white);
+  font-size: var(--font-size-s);
+}
+
+/* Modificador: bloque vacío con patrón rayado */
+.c-gallery-item--empty {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-navy) 0 2px,
+    var(--color-mint) 2px 8px
+  );
+}

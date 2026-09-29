@@ -1,5 +1,8 @@
 .o-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(var(--grid-columns, 3), 1fr);
   gap: var(--space-m);
 }
+
+.o-grid--4 { --grid-columns: 4; }
+.o-grid--center { align-items: center; }

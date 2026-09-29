@@ -1,0 +1,47 @@
+.c-hero {
+  background-color: #1a2a4f;
+  color: #fff;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.c-hero__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.c-hero__description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.c-hero__btn {
+  background-color: #4cafef;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.c-hero__btn:hover {
+  background-color: #3a9bdc;
+}
+
+.c-hero__upcoming {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.c-hero__card {
+  width: 150px;
+  height: 200px;
+  background-color: #2a3f73;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
