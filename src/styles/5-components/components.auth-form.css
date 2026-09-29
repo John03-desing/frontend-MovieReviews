@@ -1,0 +1,28 @@
+.c-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  margin-top: var(--space-l);
+}
+
+.c-auth-form__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-s);
+  font-size: var(--font-size-s);
+}
+
+.c-auth-form__link {
+  padding: 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c-auth-form__link:hover {
+  color: var(--color-mint);
+}

@@ -1,0 +1,25 @@
+.c-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.c-form-field__label {
+  font-size: var(--font-size-s);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-mint);
+}
+
+.c-form-field__input {
+  padding: 0.75rem 1rem;
+  background: rgb(0 0 0 / 0.3);
+  color: var(--color-white);
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  font: inherit;
+}
+
+.c-form-field__input:focus-visible {
+  outline: 2px solid var(--color-mint);
+}

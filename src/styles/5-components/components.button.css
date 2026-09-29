@@ -16,7 +16,6 @@
   height: 1.125rem;
 }
 
-/* Variante principal: relleno mint */
 .c-button--primary {
   background: var(--color-mint);
   border-color: var(--color-mint);
@@ -30,7 +29,6 @@
   color: var(--color-mint);
 }
 
-/* Variante secundaria: solo contorno */
 .c-button--secondary {
   background: transparent;
   color: var(--color-navy);
@@ -40,4 +38,21 @@
 .c-button--secondary:focus-visible {
   background: var(--color-navy);
   color: var(--color-white);
+}
+
+.c-button--light {
+  background: transparent;
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.c-button--light:hover,
+.c-button--light:focus-visible {
+  background: var(--color-white);
+  color: var(--color-navy);
+}
+
+.c-button--block {
+  width: 100%;
+  justify-content: center;
 }

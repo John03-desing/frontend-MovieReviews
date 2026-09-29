@@ -1,0 +1,57 @@
+.c-landing {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: var(--color-white);
+  background:
+    linear-gradient(to bottom, rgb(17 46 64 / 0.55), rgb(17 46 64 / 0.9)),
+    url('/landing/cinema.jpg') center / cover no-repeat,
+    var(--color-navy);
+}
+
+/* o-container usa margin auto; en un flex column hay que forzar el ancho */
+.c-landing__header,
+.c-landing__content {
+  width: 100%;
+}
+
+.c-landing__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--space-m);
+}
+
+.c-landing__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.c-landing__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: var(--space-m);
+  padding-bottom: 4rem;
+}
+
+.c-landing__title {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.c-landing__subtitle {
+  max-width: 40ch;
+  font-size: 1.125rem;
+}
+
+.c-landing__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
