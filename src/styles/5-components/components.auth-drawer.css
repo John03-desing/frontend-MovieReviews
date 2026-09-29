@@ -6,6 +6,19 @@
   justify-content: flex-end;
   background: rgb(17 46 64 / 0.45);
   backdrop-filter: blur(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--drawer-close-duration) ease,
+    visibility 0s linear var(--drawer-close-duration);
+}
+
+.c-auth-drawer--open {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity var(--drawer-open-duration) ease,
+    visibility 0s;
 }
 
 .c-auth-drawer__panel {
@@ -16,7 +29,13 @@
   padding: var(--space-l);
   background: var(--color-navy);
   color: var(--color-white);
-  animation: c-auth-drawer-slide 0.3s ease-out;
+  transform: translateX(100%);
+  transition: transform var(--drawer-close-duration) ease-in;
+}
+
+.c-auth-drawer--open .c-auth-drawer__panel {
+  transform: translateX(0);
+  transition: transform var(--drawer-open-duration) ease-out;
 }
 
 @keyframes c-auth-drawer-slide {
@@ -63,5 +82,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .c-auth-drawer__panel { animation: none; }
+  .c-auth-drawer,
+  .c-auth-drawer--open,
+  .c-auth-drawer__panel,
+  .c-auth-drawer--open .c-auth-drawer__panel {
+    transition: none;
+  }
 }

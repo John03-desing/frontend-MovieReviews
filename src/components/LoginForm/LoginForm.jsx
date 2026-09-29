@@ -16,7 +16,6 @@ function LoginForm({ onSwitch }) {
       <Button type="submit" icon={FiArrowRight} block>Iniciar sesión</Button>
 
       <div className="c-auth-form__links">
-        <button className="c-auth-form__link" type="button">Recuperar contraseña</button>
         <button className="c-auth-form__link" type="button" onClick={onSwitch}>¿Sin cuenta? Regístrate</button>
       </div>
     </form>

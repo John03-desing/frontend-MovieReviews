@@ -10,8 +10,16 @@ const drawerCopy = {
 }
 
 function Landing() {
-  const [mode, setMode] = useState(null) // null | 'login' | 'register'
+  const [mode, setMode] = useState('login') // null | 'login' | 'register'
+  const [isOpen, setIsOpen] = useState(false)
   const copy = mode ? drawerCopy[mode] : null
+
+  const openDrawer = (nextMode) => {
+    setMode(nextMode)
+    setIsOpen(true)
+  }
+
+  const closeDrawer = () => setIsOpen(false)
 
   return (
     <div className="c-landing">
@@ -19,8 +27,8 @@ function Landing() {
         <p className="c-landing__logo">MovieReviews</p>
 
         <div className="c-landing__actions">
-          <Button variant="light" onClick={() => setMode('login')}>Iniciar sesión</Button>
-          <Button onClick={() => setMode('register')}>Crear cuenta</Button>
+          <Button variant="light" onClick={() => openDrawer('login')}>Iniciar sesión</Button>
+          <Button onClick={() => openDrawer('register')}>Crear cuenta</Button>
         </div>
       </header>
 
@@ -31,13 +39,16 @@ function Landing() {
         </p>
       </main>
       <AuthDrawer
-        isOpen={mode !== null}
-        title={copy?.title}
-        subtitle={copy?.subtitle}
-        onClose={() => setMode(null)}
+        isOpen={isOpen}
+        title={copy.title}
+        subtitle={copy.subtitle}
+        onClose={closeDrawer}
       >
-        {mode === 'login' && <LoginForm onSwitch={() => setMode('register')} />}
-        {mode === 'register' && <RegisterForm onSwitch={() => setMode('login')} />}
+        {mode === 'login' ? (
+          <LoginForm onSwitch={() => setMode('register')} />
+        ) : (
+          <RegisterForm onSwitch={() => setMode('login')} />
+        )}
       </AuthDrawer>
     </div>
   )

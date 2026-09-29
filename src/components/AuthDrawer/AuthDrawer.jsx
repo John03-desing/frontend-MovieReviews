@@ -18,10 +18,11 @@ function AuthDrawer({ isOpen, title, subtitle, onClose, children }) {
     }
   }, [isOpen, onClose])
 
-  if (!isOpen) return null
-
   return (
-    <div className="c-auth-drawer" onClick={onClose}>
+    <div
+      className={`c-auth-drawer${isOpen ? ' c-auth-drawer--open' : ''}`}
+      onClick={onClose}
+    >
       <aside
         className="c-auth-drawer__panel"
         role="dialog"

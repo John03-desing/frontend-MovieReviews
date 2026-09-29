@@ -1,4 +1,7 @@
 :root {
+  --drawer-open-duration: 0.35s;
+  --drawer-close-duration: 0.5s;
+  
   --header-height: 8.5rem;
 
   --container-padding: 3.5rem;
