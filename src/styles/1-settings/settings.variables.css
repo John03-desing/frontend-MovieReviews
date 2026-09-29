@@ -1,0 +1,12 @@
+:root {
+  --color-navy: #12283f;
+  --color-mint: #20c9a0;
+  --color-bg: #cfd8e1;
+  --color-white: #ffffff;
+
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+
+  --font-size-s: 0.875rem;
+}
