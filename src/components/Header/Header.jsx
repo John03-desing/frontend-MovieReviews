@@ -10,7 +10,7 @@ function Header() {
                         <li className="c-header__item"><a href="/">Inicio</a></li>
                         <li className="c-header__item"><a href="">Reseñas</a></li>
                         <li className="c-header__item"><a href="">Estrenos</a></li>
-                        <li className="c-header__item"><a href="">Actores</a></li>
+                        <li className="c-header__item"><a href="">Actores Destacados</a></li>
                     </ul>
                 </nav>
             </div>

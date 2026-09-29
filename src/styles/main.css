@@ -9,4 +9,6 @@
 @import './5-components/components.card.css';
 @import './5-components/components.gallery-item.css';
 @import './5-components/components.person-card.css';
+@import './5-components/components.footer.css';
+@import './5-components/components.footer-column.css';
 @import './6-utilities/utilities.visually-hidden.css';

@@ -1,0 +1,16 @@
+.c-footer-column__title {
+  margin-bottom: var(--space-s);
+  font-size: 1rem;
+  color: var(--color-mint);
+}
+
+.c-footer-column__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: var(--font-size-s);
+}
+
+.c-footer-column__link:hover {
+  color: var(--color-mint);
+}

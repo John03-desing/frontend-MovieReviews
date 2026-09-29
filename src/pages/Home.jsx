@@ -8,6 +8,7 @@ import GalleryItem from '../components/GalleryItem/GalleryItem'
 import PersonCard from '../components/PersonCard/PersonCard'
 import { gallery } from '../data/gallery'
 import { people } from '../data/people'
+import Footer from '../components/Footer/Footer'
 
 function Home() {
     return(
@@ -22,7 +23,7 @@ function Home() {
                     ))}
                 </Section>
 
-                <Section title="Galeria" layout='o-grid--4'>
+                <Section title="Estrenos" layout='o-grid--4'>
                     {gallery.map ((item) => (
                         <GalleryItem key={item.id} {...item} />
                     ))}
@@ -34,6 +35,8 @@ function Home() {
                     ))}
                 </Section>
             </main>
+
+            <Footer />
         </>
     )
 }
