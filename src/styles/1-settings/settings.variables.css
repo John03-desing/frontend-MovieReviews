@@ -1,7 +1,11 @@
 :root {
-  --color-navy: #12283f;
-  --color-mint: #20c9a0;
-  --color-bg: #cfd8e1;
+  --header-height: 8.5rem;
+  
+  --color-navy: #112E40;
+  --color-mint: #6CD9BA;
+  --color-mid-mint: #1FBF91;
+  --color-dk-mint: #025949;
+  --color-bg: #C8D3D9;
   --color-white: #ffffff;
 
   --space-s: 0.5rem;

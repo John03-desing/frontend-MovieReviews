@@ -1,6 +1,7 @@
 .c-header {
-  background-color: #C8D3D9;
   padding: 1rem 2rem;
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-navy);
 }
 
 .c-header__inner {
@@ -13,7 +14,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
-  background-color: #112E40;
+  background-color: var(--color-navy);
   padding: 0.5rem 1rem;
   border-radius: 6px;
 }
@@ -25,7 +26,7 @@
 }
 
 .c-header__item a {
-  color:#025949;
+  color:var(--color-dk-mint);
   text-decoration: none;
   font-weight: 500;
 }

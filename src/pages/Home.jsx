@@ -13,23 +13,25 @@ import Footer from '../components/Footer/Footer'
 function Home() {
     return(
         <>
-            <TopBar />
-            <Header />
+            <div className="c-site-header">
+                <TopBar />
+                <Header />
+            </div>
             <Hero />
             <main>
-                <Section title="Reseñas">
+                <Section id="reviews" title="Reseñas" layout="o-grid--3">
                     {cards.map((card) => (
                         <Card key={card.id} {...card}/>
                     ))}
                 </Section>
 
-                <Section title="Estrenos" layout='o-grid--4'>
+                <Section id="estrenos" title="Estrenos" layout='o-grid--4'>
                     {gallery.map ((item) => (
                         <GalleryItem key={item.id} {...item} />
                     ))}
                 </Section>
 
-                <Section title="Actores destacados" layout="o-grid--center">
+                <Section id="actores" title="Actores destacados" layout="o-grid--center">
                     {people.map((person) =>(
                         <PersonCard key={person.id} {...person} />
                     ))}

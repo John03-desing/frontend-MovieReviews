@@ -1,0 +1,11 @@
+.c-section__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: var(--color-dk-mint);
+}
+.c-section {
+  padding-block: var(--space-1);
+  margin-bottom: 2rem;
+}
+

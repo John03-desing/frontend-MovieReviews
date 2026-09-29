@@ -21,7 +21,7 @@
 
 .c-person-card__role {
   font-size: var(--font-size-s);
-  color: var(--color-mint);
+  color: var(--color-dk-mint);
 }
 
 /* Modificador: la tarjeta central, más grande */

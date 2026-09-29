@@ -3,7 +3,7 @@ import { upcoming } from "../../data/upcoming"
 
 function Hero() {
     return(
-        <section className="c-hero">
+        <section className="c-hero" id="inicio">
             <div className="o-container c-hero__content">
                 <h1 className="c-hero__title">Bienvenido a MovieReviews</h1>
                 <p className="c-hero__description">

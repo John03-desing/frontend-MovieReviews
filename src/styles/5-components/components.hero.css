@@ -1,9 +1,10 @@
 .c-hero {
-  background-color: #112E40;
+  background-color: var(--color-navy);
   color: #fff;
   padding: 3rem 2rem 6rem;
   text-align: center;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .c-hero__title {
@@ -17,7 +18,7 @@
 }
 
 .c-hero__btn {
-  background-color: #4cafef;
+  background-color: var(--color-mint);
   border: none;
   padding: 0.8rem 1.5rem;
   color: #fff;
@@ -27,7 +28,7 @@
 }
 
 .c-hero__btn:hover {
-  background-color: #3a9bdc;
+  background-color: var(--color-mid-mint);
 }
 
 .c-hero__upcoming {
@@ -44,7 +45,7 @@
 .c-hero__card {
   width: 150px;
   height: 200px;
-  background-color: #2a3f73;
+  background-color: var(--color-navy);
   display: flex;
   align-items: center;
   justify-content: center;
