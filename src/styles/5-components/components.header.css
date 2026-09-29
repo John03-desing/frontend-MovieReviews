@@ -1,0 +1,32 @@
+.c-header {
+  background-color: #2a3f73;
+  padding: 1rem 2rem;
+}
+
+.c-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.c-header__nav .c-header__list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.c-header__item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.c-header__item a:hover {
+  text-decoration: underline;
+}
