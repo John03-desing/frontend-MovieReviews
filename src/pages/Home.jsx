@@ -9,6 +9,8 @@ import PersonCard from '../components/PersonCard/PersonCard'
 import { gallery } from '../data/gallery'
 import { people } from '../data/people'
 import Footer from '../components/Footer/Footer'
+import {FiList, FiPlus } from 'react-icons/fi'
+import Button from '../components/Button/Button'
 
 function Home() {
     return(
@@ -19,7 +21,14 @@ function Home() {
             </div>
             <Hero />
             <main>
-                <Section id="reviews" title="Reseñas" layout="o-grid--3">
+                <Section id="reviews" title="Reseñas" layout="o-grid--3"
+                actions={
+                    <>
+                        <Button icon={FiPlus}>Crear Reseña</Button>
+                        <Button variant="secondary" icon={FiList}>Mis reseñas</Button>
+                    </>
+                }
+                >
                     {cards.map((card) => (
                         <Card key={card.id} {...card}/>
                     ))}

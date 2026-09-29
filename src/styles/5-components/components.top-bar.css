@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   padding-block: var(--space-s);
+  padding-inline: 3rem;
 }
 
 .c-top-bar__info,
@@ -30,4 +31,35 @@
 
 .c-top-bar--compact .c-top-bar__inner {
   padding-block: 0.25rem;
+}
+
+.c-top-bar__logout {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background: transparent;
+  color: var(--color-mint);
+  border: 1px solid var(--color-mint);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.c-top-bar__logout:hover,
+.c-top-bar__logout:focus-visible {
+  background: var(--color-mint);
+  color: var(--color-navy);
+}
+
+/* Modificador: icono de líneas (stroke) en lugar de relleno (fill) */
+.c-top-bar__icon--outline {
+  width: 1.125rem;
+  height: 1.125rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }

@@ -1,0 +1,43 @@
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-navy);
+  border-radius: 0.375rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.c-button__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+/* Variante principal: relleno mint */
+.c-button--primary {
+  background: var(--color-mint);
+  border-color: var(--color-mint);
+  color: var(--color-navy);
+}
+
+.c-button--primary:hover,
+.c-button--primary:focus-visible {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-mint);
+}
+
+/* Variante secundaria: solo contorno */
+.c-button--secondary {
+  background: transparent;
+  color: var(--color-navy);
+}
+
+.c-button--secondary:hover,
+.c-button--secondary:focus-visible {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
