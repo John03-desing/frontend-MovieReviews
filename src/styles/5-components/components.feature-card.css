@@ -1,9 +1,11 @@
 .c-feature-card {
   flex: 1;
-  max-width: 200px;
+  max-width:16rem;
+  min-width: 0;
   background: #6CD9BA;
   border-radius: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .c-feature-card__image {

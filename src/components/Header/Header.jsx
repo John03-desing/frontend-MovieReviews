@@ -11,7 +11,7 @@ function Header() {
                     <ul className="c-header__list">
                         <li className="c-header__item"><Link className="c-header__link" to="/inicio">Inicio</Link></li>
                         <li className="c-header__item"><Link className="c-header__link" to="/inicio#reviews">Reseñas</Link></li>
-                        <li className="c-header__item"><Link className="c-header__link" to="/inicio#estrenos">Estrenos</Link></li>
+                        <li className="c-header__item"><Link className="c-header__link" to="/inicio#favoritos">Favoritos</Link></li>
                         <li className="c-header__item"><Link className="c-header__link" to="/inicio#actores">Actores Destacados</Link></li>
                     </ul>
                 </nav>
