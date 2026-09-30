@@ -5,14 +5,18 @@ import Footer from '../Footer/Footer'
 
 function MainLayout() {
   return (
-    <>
+    <div className="o-layout">
       <div className="c-site-header">
         <TopBar />
         <Header />
       </div>
-      <Outlet />
+
+      <div className="o-layout__content">
+        <Outlet />
+      </div>
+
       <Footer />
-    </>
+    </div>
   )
 }
 

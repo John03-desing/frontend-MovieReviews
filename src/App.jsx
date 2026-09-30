@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+
 import Landing from './pages/Landing'
 import Home from './pages/Home'
 import CreateReview from './pages/CreateReview'
@@ -7,17 +8,21 @@ import ScrollToHash from './components/ScrollToHash/ScrollToHash'
 import MyReviews from './pages/MyReviews'
 import EditReview from './pages/EditReview'
 
+import ProtectedRoute from './routes/ProtectedRoute'
+
 function App() {
   return (
     <>
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route element={<MainLayout />}>
-          <Route path="/inicio" element={<Home />} />
-          <Route path="/reviews/nueva" element={<CreateReview />} />
-          <Route path="/mis-reviews" element={<MyReviews />} />
-          <Route path="/reviews/:id/editar" element={<EditReview />} />
+          <Route element={ <ProtectedRoute />}>
+            <Route element={<MainLayout />}>
+              <Route path="/inicio" element={<Home />} />
+              <Route path="/reviews/nueva" element={<CreateReview />} />
+              <Route path="/mis-reviews" element={<MyReviews />} />
+              <Route path="/reviews/:id/editar" element={<EditReview />} />
+            </Route>
         </Route>
       </Routes>
     </>

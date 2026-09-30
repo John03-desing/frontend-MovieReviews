@@ -1,0 +1,10 @@
+.o-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh; /* en móvil descuenta las barras del navegador */
+}
+
+.o-layout__content {
+  flex: 1; /* ocupa el espacio sobrante y empuja el footer al fondo */
+}
