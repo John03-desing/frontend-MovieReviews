@@ -1,0 +1,45 @@
+.c-poster-preview {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: rgb(255 255 255 / 0.06);
+  border-radius: 0.5rem;
+}
+
+.c-poster-preview__frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 2 / 3;
+  background: rgb(0 0 0 / 0.3);
+}
+
+.c-poster-preview__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c-poster-preview__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-s);
+  padding: var(--space-m);
+  text-align: center;
+  font-size: var(--font-size-s);
+  color: rgb(255 255 255 / 0.6);
+}
+
+.c-poster-preview__details {
+  padding: var(--space-m);
+}
+
+.c-poster-preview__term {
+  font-size: var(--font-size-s);
+  color: rgb(255 255 255 / 0.6);
+}
+
+.c-poster-preview__value {
+  margin-bottom: var(--space-s);
+  font-weight: 600;
+}

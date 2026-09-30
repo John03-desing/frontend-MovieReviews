@@ -3,10 +3,10 @@ export const footerColumns = [
     id: 1,
     title: 'Explorar',
     links: [
-      { label: 'Inicio', href: '/' },
-      { label: 'Reseñas', href: '#resenas' },
-      { label: 'Estrenos', href: '#estrenos' },
-      { label: 'Actores', href: '#actores' },
+      { label: 'Inicio', to: '/inicio' },
+      { label: 'Reseñas', to: '/inicio#reviews' },
+      { label: 'Estrenos', to: '/inicio#estrenos' },
+      { label: 'Actores', to: '/inicio#actores' },
     ],
   },
   {

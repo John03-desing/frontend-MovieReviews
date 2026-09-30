@@ -1,5 +1,3 @@
-import TopBar from '../components/TopBar/TopBar'
-import Header from '../components/Header/Header'
 import Hero from '../components/Hero/Hero'
 import Section from '../components/Section/Section'
 import Card from '../components/Card/Card'
@@ -8,27 +6,25 @@ import GalleryItem from '../components/GalleryItem/GalleryItem'
 import PersonCard from '../components/PersonCard/PersonCard'
 import { gallery } from '../data/gallery'
 import { people } from '../data/people'
-import Footer from '../components/Footer/Footer'
 import {FiList, FiPlus } from 'react-icons/fi'
 import Button from '../components/Button/Button'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+    const navigate = useNavigate()
+
     return(
         <>
-            <div className="c-site-header">
-                <TopBar />
-                <Header />
-            </div>
             <Hero />
             <main>
                 <Section id="reviews" title="Reseñas" layout="o-grid--3"
-                actions={
-                    <>
-                        <Button icon={FiPlus}>Crear Reseña</Button>
-                        <Button variant="secondary" icon={FiList}>Mis reseñas</Button>
-                    </>
-                }
-                >
+                    actions={
+                        <>
+                        <Button icon={FiPlus} onClick={() => navigate('/reviews/nueva')}>Crear reseña</Button>
+                        <Button variant="secondary" icon={FiList} onClick={() => navigate('/mis-reviews')}>Mis reseñas</Button>
+                        </>
+                    }
+                    >
                     {cards.map((card) => (
                         <Card key={card.id} {...card}/>
                     ))}
@@ -46,8 +42,6 @@ function Home() {
                     ))}
                 </Section>
             </main>
-
-            <Footer />
         </>
     )
 }

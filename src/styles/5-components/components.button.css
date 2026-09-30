@@ -56,3 +56,20 @@
   width: 100%;
   justify-content: center;
 }
+
+.c-button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.c-button--danger {
+  background: var(--color-danger);
+  border-color: var(--color-danger);
+  color: var(--color-white);
+}
+
+.c-button--danger:hover,
+.c-button--danger:focus-visible {
+  background: var(--color-white);
+  color: var(--color-danger);
+}

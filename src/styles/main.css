@@ -19,4 +19,12 @@
 @import './5-components/components.auth-form.css';
 @import './5-components/components.auth-drawer.css';
 @import './5-components/components.landing.css';
+@import './5-components/components.star-rating.css';
+@import './5-components/components.poster-preview.css';
+@import './5-components/components.review-form.css';
+@import './5-components/components.icon-button.css';
+@import './5-components/components.status-message.css';
+@import './5-components/components.review-list.css';
+@import './5-components/components.review-item.css';
+@import './5-components/components.confirm-dialog.css';
 @import './6-utilities/utilities.visually-hidden.css';

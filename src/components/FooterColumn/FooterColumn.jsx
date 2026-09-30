@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function FooterColumn({ title, links }) {
   return (
     <nav className="c-footer-column" aria-label={title}>
@@ -5,9 +7,11 @@ function FooterColumn({ title, links }) {
       <ul className="c-footer-column__list">
         {links.map((link) => (
           <li key={link.label}>
-            <a className="c-footer-column__link" href={link.href}>
-              {link.label}
-            </a>
+            {link.to ? (
+              <Link className="c-footer-column__link" to={link.to}>{link.label}</Link>
+            ) : (
+              <a className="c-footer-column__link" href={link.href}>{link.label}</a>
+            )}
           </li>
         ))}
       </ul>

@@ -1,0 +1,38 @@
+.c-confirm-dialog {
+  width: min(90vw, 26rem);
+  margin: auto;
+  padding: 0;
+  background: var(--color-navy);
+  color: var(--color-white);
+  border: 0;
+  border-radius: 0.75rem;
+}
+
+.c-confirm-dialog::backdrop {
+  background: rgb(17 46 64 / 0.45);
+  backdrop-filter: blur(6px);
+}
+
+.c-confirm-dialog__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  padding: var(--space-l);
+}
+
+.c-confirm-dialog__title {
+  font-size: 1.25rem;
+}
+
+.c-confirm-dialog__error {
+  padding: var(--space-s);
+  background: rgb(199 62 62 / 0.25);
+  border-radius: 0.375rem;
+  font-size: var(--font-size-s);
+}
+
+.c-confirm-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-s);
+}

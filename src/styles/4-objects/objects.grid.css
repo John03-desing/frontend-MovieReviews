@@ -3,6 +3,7 @@
   grid-template-columns: repeat(var(--grid-columns, 3), 1fr);
   gap: var(--space-m);
 }
+.o-grid--1 { --grid-columns: 1; }
 .o-grid--2 { --grid-columns: 2; }
 .o-grid--3 { --grid-columns: 3; }
 .o-grid--4 { --grid-columns: 4; }

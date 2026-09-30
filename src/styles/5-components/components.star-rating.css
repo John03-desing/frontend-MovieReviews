@@ -1,0 +1,46 @@
+.c-star-rating {
+  min-width: 0;
+  border: 0;
+}
+
+.c-star-rating__legend {
+  margin-bottom: 0.25rem;
+  font-size: var(--font-size-s);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-mint);
+}
+
+.c-star-rating__stars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.c-star-rating__star {
+  display: grid;
+  place-items: center;
+  padding: 0.125rem;
+  border-radius: 0.25rem;
+  font-size: 1.75rem;
+  color: rgb(255 255 255 / 0.25);
+  cursor: pointer;
+  transition: color 0.15s, transform 0.15s;
+}
+
+.c-star-rating__star:hover {
+  transform: scale(1.15);
+}
+
+.c-star-rating__star:focus-within {
+  outline: 2px solid var(--color-white);
+}
+
+.c-star-rating__star--active {
+  color: var(--color-mint);
+}
+
+.c-star-rating__value {
+  margin-top: 0.25rem;
+  font-size: var(--font-size-s);
+}

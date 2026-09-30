@@ -1,16 +1,18 @@
+import {Link} from 'react-router-dom'
+
 function Header() {
     return(
         <header className="c-header">
             <div className="o-container c-header__inner">
                 {/*logo de la app*/}
-                <div className="c-header__logo">MovieReviews</div>
+                <Link className="c-header__logo" to="/inicio">MovieReviews</Link>
                 {/*navegacion*/}
                 <nav className="c-header__nav">
                     <ul className="c-header__list">
-                        <li className="c-header__item"><a className="c-header__link" href="#inicio">Inicio</a></li>
-                        <li className="c-header__item"><a className="c-header__link" href="#reviews">Reseñas</a></li>
-                        <li className="c-header__item"><a className="c-header__link" href="#estrenos">Estrenos</a></li>
-                        <li className="c-header__item"><a className="c-header__link" href="#actores">Actores Destacados</a></li>
+                        <li className="c-header__item"><Link className="c-header__link" to="/inicio">Inicio</Link></li>
+                        <li className="c-header__item"><Link className="c-header__link" to="/inicio#reviews">Reseñas</Link></li>
+                        <li className="c-header__item"><Link className="c-header__link" to="/inicio#estrenos">Estrenos</Link></li>
+                        <li className="c-header__item"><Link className="c-header__link" to="/inicio#actores">Actores Destacados</Link></li>
                     </ul>
                 </nav>
             </div>
