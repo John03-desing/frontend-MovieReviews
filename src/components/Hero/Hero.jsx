@@ -32,7 +32,7 @@ function Hero() {
           <p className="c-hero__description">
             Descubre reseñas auténticas y mantente al día con los próximos estrenos.
           </p>
-          <button className="c-hero__btn">Ver próximos estrenos</button>
+          <a className="c-hero__btn" href="https://cinepolis.com/mx" target='_blank' rel='Noopener noreferrer'>Compra tus boletos aquí</a>
 
           {loading && <p className="c-hero__status">Cargando próximas películas…</p>}
           {error && <p className="c-hero__status" role="alert">{error}</p>}

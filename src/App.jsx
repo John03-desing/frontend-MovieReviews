@@ -7,22 +7,51 @@ import MainLayout from './components/MainLayout/MainLayout'
 import ScrollToHash from './components/ScrollToHash/ScrollToHash'
 import MyReviews from './pages/MyReviews'
 import EditReview from './pages/EditReview'
+import AdminReviews from './pages/AdminReviews'
 
 import ProtectedRoute from './routes/ProtectedRoute'
+import AdminRoute from './routes/AdminRoute'
 
 function App() {
   return (
     <>
       <ScrollToHash />
+
       <Routes>
-        <Route path="/" element={<Landing />} />
-          <Route element={ <ProtectedRoute />}>
-            <Route element={<MainLayout />}>
-              <Route path="/inicio" element={<Home />} />
-              <Route path="/reviews/nueva" element={<CreateReview />} />
-              <Route path="/mis-reviews" element={<MyReviews />} />
-              <Route path="/reviews/:id/editar" element={<EditReview />} />
+        <Route
+          path="/"
+          element={<Landing />}
+        />
+
+        <Route element={<ProtectedRoute />}>
+          <Route element={<MainLayout />}>
+            <Route
+              path="/inicio"
+              element={<Home />}
+            />
+
+            <Route
+              path="/reviews/nueva"
+              element={<CreateReview />}
+            />
+
+            <Route
+              path="/mis-reviews"
+              element={<MyReviews />}
+            />
+
+            <Route
+              path="/reviews/:id/editar"
+              element={<EditReview />}
+            />
+
+            <Route element={<AdminRoute />}>
+              <Route
+                path="/admin"
+                element={<AdminReviews />}
+              />
             </Route>
+          </Route>
         </Route>
       </Routes>
     </>

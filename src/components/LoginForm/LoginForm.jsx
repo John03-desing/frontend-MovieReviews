@@ -37,7 +37,19 @@ function LoginForm({ onSwitch }) {
 
             login(data)
 
-            navigate('/inicio')
+            if (data.user?.role === 'admin') {
+
+                navigate('/admin', {
+                    replace: true
+                })
+
+            } else {
+
+                navigate('/inicio', {
+                    replace: true
+                })
+
+            }
 
         } catch (error) {
 
@@ -52,8 +64,23 @@ function LoginForm({ onSwitch }) {
 
     return (
         <form className="c-auth-form" onSubmit={handleSubmit}>
-            <FormField id="login-email" label="Email" type="email" name="email" autoComplete="email" required />
-            <FormField id="login-password" label="Contraseña" type="password" name="password" autoComplete="current-password" required/>
+            <FormField
+                id="login-email"
+                label="Email"
+                type="email"
+                name="email"
+                autoComplete="email"
+                required
+            />
+
+            <FormField
+                id="login-password"
+                label="Contraseña"
+                type="password"
+                name="password"
+                autoComplete="current-password"
+                required
+            />
 
             {error && (
                 <p className="c-auth-form__error">
@@ -61,9 +88,16 @@ function LoginForm({ onSwitch }) {
                 </p>
             )}
 
-            <Button type="submit" icon={FiArrowRight} block disabled={loading}>
+            <Button
+                type="submit"
+                icon={FiArrowRight}
+                block
+                disabled={loading}
+            >
                 {
-                loading ? 'Iniciando sesión...' : 'Iniciar sesión'
+                    loading
+                        ? 'Iniciando sesión...'
+                        : 'Iniciar sesión'
                 }
             </Button>
 

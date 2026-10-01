@@ -37,3 +37,30 @@
 .c-header__item a:hover {
   text-decoration: underline;
 }
+
+.c-header__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+
+  color: #fff;
+  background-color: var(--color-navy);
+
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+
+  text-decoration: none;
+}
+
+.c-header__logo-image {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+}
