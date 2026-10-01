@@ -9,12 +9,17 @@
   border-radius: 0.75rem;
   max-width: 280px;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .c-card__image {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
   border-radius: 0.5rem;
   background: var(--color-navy);
 }
@@ -25,13 +30,39 @@
 }
 
 .c-card__title {
+  margin: 0;
   font-size: 1.125rem;
   color: var(--color-navy);
 }
 
+.card__rating {
+  margin: 0;
+  font-weight: 600;
+  color:var(--color-navy);
+}
+
 .c-card__description {
   flex-grow: 1;
+  margin: 0;
   color: var(--color-navy);
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c-card__meta{
+    display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+
+  font-size: var(--font-size-s);
+  color: var(--color-navy);
+
+  opacity: 0.75;
 }
 
 .c-card__footer {

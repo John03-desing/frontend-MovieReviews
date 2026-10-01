@@ -28,4 +28,8 @@
 @import './5-components/components.review-list.css';
 @import './5-components/components.review-item.css';
 @import './5-components/components.confirm-dialog.css';
+@import './5-components/components.pagination.css';
+@import './5-components/components.modal.css';
+@import './5-components/components.review-modal.css';
+@import './5-components/components.genre-filter.css';
 @import './6-utilities/utilities.visually-hidden.css';

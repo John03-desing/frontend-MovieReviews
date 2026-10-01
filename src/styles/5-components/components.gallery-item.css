@@ -1,15 +1,20 @@
 .c-gallery-item {
   position: relative;
+  width: 100%;
   aspect-ratio: 1 / 1;
+  margin: 0;
   overflow: hidden;
   background: var(--color-mint);
   border-radius: 0.5rem;
 }
 
 .c-gallery-item__image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s;
 }
 
 .c-gallery-item__caption {
@@ -23,9 +28,85 @@
 
 /* Modificador: bloque vacío con patrón rayado */
 .c-gallery-item--empty {
+  display: grid;
+  place-items: center;
+
   background: repeating-linear-gradient(
     45deg,
     var(--color-navy) 0 2px,
     var(--color-mint) 2px 8px
   );
+}
+
+.c-gallery-item:hover
+.c-gallery-item__image {
+  transform: scale(1.02);
+}
+
+.c-gallery-item__add {
+  display: grid;
+  place-items: center;
+
+  width: 3.5rem;
+  height: 3.5rem;
+
+  padding: 0;
+
+  background: var(--color-navy);
+  color: var(--color-mint);
+
+  border: 2px solid var(--color-mint);
+  border-radius: 50%;
+
+  font-size: 1.75rem;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    color 0.2s;
+}
+
+.c-gallery-item__add:hover {
+  transform: scale(1.08);
+
+  background: var(--color-mint);
+  color: var(--color-navy);
+}
+
+.c-gallery-item__delete {
+  position: absolute;
+
+  right: 0.75rem;
+  bottom: 0.75rem;
+
+  display: grid;
+  place-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  padding: 0;
+
+  background: var(--color-navy);
+  color: var(--color-white);
+
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 3px 8px rgb(0 0 0 / 0.3);
+
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.c-gallery-item__delete:hover {
+  transform: scale(1.08);
+
+  background: #a83232;
 }

@@ -1,0 +1,159 @@
+/* Popup adaptado al contenido */
+.c-modal__panel.c-modal__panel--review {
+  position: relative;
+
+  width: min(34rem, calc(100vw - 2rem));
+
+  height: auto;
+  min-height: 0;
+  max-height: 80vh;
+
+  padding: var(--space-l);
+
+  overflow-y: auto;
+}
+
+
+/* X en esquina superior derecha */
+.c-review-modal__close {
+  position: absolute;
+
+  top: 1rem;
+  right: 1rem;
+
+  display: grid;
+  place-items: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  padding: 0;
+
+  background: transparent;
+  color: var(--color-navy);
+
+  border: 0;
+  border-radius: 50%;
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.c-review-modal__close:hover {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+
+/* Encabezado */
+.c-review-modal__header {
+  padding-right: 3rem;
+  padding-bottom: var(--space-m);
+
+  border-bottom: 2px solid var(--color-navy);
+}
+
+.c-review-modal__title {
+  margin: 0;
+
+  font-size: 1.6rem;
+  color: var(--color-navy);
+}
+
+
+/* Calificación */
+.c-review-modal__rating {
+  display: flex;
+  align-items: center;
+
+  gap: 0.4rem;
+
+  margin-top: var(--space-m);
+
+  font-size: 1.15rem;
+  color: var(--color-navy);
+}
+
+.c-review-modal__star {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  fill: var(--color-mint);
+  stroke: var(--color-mint);
+}
+
+
+/* Contenido */
+.c-review-modal__content {
+  margin-top: var(--space-l);
+}
+
+.c-review-modal__subtitle {
+  margin: 0 0 var(--space-s);
+
+  font-size: 1rem;
+  color: var(--color-mint);
+}
+
+.c-review-modal__text {
+  margin: 0;
+
+  color: var(--color-navy);
+
+  font-size: 1rem;
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+
+/* Autor */
+.c-review-modal__footer {
+  display: flex;
+  align-items: baseline;
+
+  gap: 0.5rem;
+
+  margin-top: var(--space-l);
+  padding-top: var(--space-m);
+
+  border-top: 1px solid rgb(18 40 63 / 0.2);
+
+  color: var(--color-navy);
+}
+
+.c-review-modal__author-label {
+  opacity: 0.75;
+}
+
+.c-review-modal__author {
+  font-family:
+    "Segoe Script",
+    "Brush Script MT",
+    cursive;
+
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 600;
+
+  color: var(--color-navy);
+}
+
+
+@media (max-width: 40rem) {
+  .c-modal__panel.c-modal__panel--review {
+    width: calc(100vw - 2rem);
+
+    padding: var(--space-m);
+  }
+
+  .c-review-modal__title {
+    font-size: 1.3rem;
+  }
+}
